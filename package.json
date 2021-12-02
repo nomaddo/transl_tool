@@ -1,17 +1,22 @@
 {
-  "name": "transl_tool",
+  "name": "transutil",
   "version": "1.0.0",
-  "description": "Help translation of markdowns",
+  "description": "Stupid translation helper for texts based on line breaks.",
   "main": "dist/index.js",
   "scripts": {
     "build": "webpack",
     "watch": "webpack -w"
   },
-  "author": "",
+  "bin": {
+    "transutil": "./bin/transutil.js"
+  },
+  "author": "nomaddo",
   "license": "MIT",
   "dependencies": {
     "@google-cloud/storage": "^5.16.1",
-    "@google-cloud/translate": "^6.3.1"
+    "@google-cloud/translate": "^6.3.1",
+    "cmd-ts": "^0.8.0",
+    "pofile": "^1.1.2"
   },
   "devDependencies": {
     "@types/lodash": "^4.14.177",
